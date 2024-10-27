@@ -63,5 +63,8 @@
             "allow-contrib": false,
             "require": "7.1.*"
         }
+    },
+    "require-dev": {
+        "qossmic/deptrac": "^2.0"
     }
 }

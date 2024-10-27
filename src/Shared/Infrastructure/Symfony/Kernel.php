@@ -20,8 +20,9 @@ class Kernel extends BaseKernel implements CompilerPassInterface
     }
     public function configureContainer(ContainerConfigurator $container): void
     {
-        $container->import('/{services}.yaml');
-        $container->import('/{services}/*/{services}.yaml');
+
+        $container->import($this->getConfigDir().'/{services}.yaml');
+        $container->import($this->getConfigDir().'/{services}/*/{services}.yaml');
     }
 
     public function configureRoutes(RoutingConfigurator $routes): void
