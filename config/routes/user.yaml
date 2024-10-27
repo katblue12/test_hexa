@@ -1,0 +1,4 @@
+home_test:
+  path: /home
+  controller: User\Infrastructure\Symfony\Controller\TestController::index
+  methods: GET|POST

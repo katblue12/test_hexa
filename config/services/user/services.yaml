@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  User\:
+    resource: '%kernel.project_dir/src/User'
+
+  User\Infrastructure\Symfony\Controller\:
+    resource: '%kernel.project_dir%/src/User/Infrastructure/Symfony/Controller/'
+    tags: [ 'controller.service_arguments' ]
+
